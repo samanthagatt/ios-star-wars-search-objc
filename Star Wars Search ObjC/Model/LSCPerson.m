@@ -22,4 +22,14 @@
     return self;
 }
 
+-(instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+    NSString *name = dictionary[@"name"];
+    NSString *birthYear = dictionary[@"birth_year"];
+    NSString *height = dictionary[@"height"];
+    NSString *eyeColor = dictionary[@"eye_color"];
+    
+    return [self initWithName:name birthYear:birthYear height:height eyeColor:eyeColor];
+}
+
 @end
